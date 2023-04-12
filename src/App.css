@@ -1,38 +1,77 @@
 .App {
-  text-align: center;
+  display: grid;
+  margin: 5% 2.5%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+  gap: 0% 3%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.Sidebar {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: rgb(230, 230, 230);
+  padding: 0% 15%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Website-Visitors {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  padding: 0% 2%;
+  background-color: rgb(230, 230, 230);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Sentiment-Analysis {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgb(230, 230, 230);
+  padding: 0% 6%;
+  margin-bottom: 20%;
+}
+
+.Reviews {
+  margin-bottom: 20%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgb(230, 230, 230);
+  padding: 0% 6%;
+}
+
+.Average-Rating {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgb(230, 230, 230);
+  padding: 0% 6%;
+  margin-bottom: 20%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(184, 184, 184);
+}
+
+.analysis {
+  display: flex;
+  justify-content: center;
+}
+
+.graph {
+  display: grid;
+  position: relative;
+  height: 70%;
+  width: 90%;
+  margin-left: 5%;
 }
